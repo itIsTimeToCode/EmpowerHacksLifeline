@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+body{
+	background-color: black;
+}
 :root{
 	--main-background: #0b0c0f;
 	--main-fonts-color: #fff;
@@ -28,7 +31,7 @@ main{
 header{
 	margin: 0 auto;
 	width: 100%;
-	height: 70px;
+	height: 100px;
 	display: flex;
     align-items: center; 
 	justify-content: space-around; 
@@ -48,9 +51,18 @@ header:hover{
 }
 
 .logo img{
-	padding-top: 5px;
 	height: 50px;
 	cursor: pointer;
+}
+
+.logo{
+	background-color: orangered;
+	background-image:linear-gradient(orangered,white);
+	background-clip:text;
+	-webkit-text-fill-color: transparent;
+	text-decoration: none;
+	font-size: 50px;
+	font-weight: 500;
 }
 
 .nav-bar{
@@ -93,7 +105,7 @@ a.nav-link{
 }
 
 #home .filter{
-	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+	background: url('https://t3.ftcdn.net/jpg/05/87/64/16/360_F_587641642_GnVhXpvkKtqMWtAutjqq5gMQznlOwOh7.jpg') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
@@ -103,6 +115,7 @@ a.nav-link{
     right: 0;
 	opacity:.20;
 }  
+
 
 .intro {
 	text-align:center;
@@ -120,7 +133,7 @@ a.nav-link{
 }
 
  h3{
-	padding-bottom: 15px;
+	padding-top: 100px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
 	font-style: normal;
@@ -128,6 +141,7 @@ a.nav-link{
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
+
 
 
 /*──────────────────
@@ -192,11 +206,12 @@ a.nav-link{
 }
 
 .card{
+	
 	display: flex;
 	flex-direction: column;
 	margin: 20px;
 	width: 200px;
-	height:250px;
+	height:300px;
 	border-radius:12px;
     background:var(--main-decor-color);
 }
@@ -209,7 +224,7 @@ a.nav-link{
 
 .card .work-content{
 	text-align: center;
-	padding: 10px 5px;
+	padding: 10px 10px;
 	font-size: 1rem;
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
@@ -244,6 +259,28 @@ a.nav-link{
 }
 	
 #contact p{
+	padding-bottom:300px;
+	text-align:center;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+
+/*------------------
+			ourFuture
+--------------------*/
+
+#ourFuture{
+	margin: auto;
+	padding-bottom: 20px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-fonts-color);
+}
+
+#ourFuture p{
 	padding:10px;
 	text-align:center;
 	font-size:1.2rem;
@@ -272,7 +309,6 @@ footer {
 	font-size: 1rem;
 	letter-spacing: 1px;
     text-decoration: none;
-	font-family: var(--main-font-family);
 }
 
 .copyright a:hover{
@@ -375,6 +411,7 @@ hr {
 		position:absolute;
 		top: 2px;
 		left: 30px;
+		margin-bottom:0;
 	}
 	.nav-show{
 		opacity: 1;
@@ -384,7 +421,7 @@ hr {
 		top: 0px;
 		right:0;
 		width:60%;
-		height: 100vh;
+
 		display:flex;
 		flex-direction: column;
 		align-items: center;
@@ -409,4 +446,12 @@ hr {
 
 .nav-active{
 	transform:translatex(0%);
+}
+
+.header {
+	text-align:center;
+}
+
+#projects{
+	margin-top:200px;
 }
